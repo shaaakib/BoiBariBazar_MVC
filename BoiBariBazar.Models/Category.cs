@@ -13,15 +13,18 @@ namespace BoiBariBazar.Models
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required]
-        [DisplayName("Category Name")]
+        [Required(ErrorMessage = "Name is required")]
+        [StringLength(30, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 30 characters")]
         public string Name { get; set; }
-        [DisplayName("Display Order")]
+
+        [Range(1, 100, ErrorMessage = "Display order must be between 1 and 100.")]
         public int DisplayOrder { get; set; }
-        [DisplayName("Description")]
         public string? Description { get; set; }
-        [DisplayName("Image Url")]
+
+        [Url(ErrorMessage = "Please enter a valid image URL")]
         public string? ImageUrl { get; set; }
+
+        [DataType(DataType.DateTime)]
         public DateTime CreatedAt { get; set; }
     }
 }
