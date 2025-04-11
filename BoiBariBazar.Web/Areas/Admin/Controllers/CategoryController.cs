@@ -3,8 +3,9 @@ using BoiBariBazar.DataAccess.Repository.IRepository;
 using BoiBariBazar.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BoiBariBazar.Web.Controllers
+namespace BoiBariBazar.Web.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
