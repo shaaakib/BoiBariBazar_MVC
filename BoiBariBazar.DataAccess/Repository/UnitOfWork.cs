@@ -1,6 +1,5 @@
 ﻿using BoiBariBazar.DataAccess.Data;
 using BoiBariBazar.DataAccess.Repository.IRepository;
-using BoiBariBazar.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +8,18 @@ using System.Threading.Tasks;
 
 namespace BoiBariBazar.DataAccess.Repository
 {
-    public class CategoryRepository : Repository<Category>, ICategoryRepository
+    public class UnitOfWork : IUnitOfWork
     {
-        private readonly ApplicationDbContext _db;
-        public CategoryRepository(ApplicationDbContext db) : base(db)
+        private ApplicationDbContext _db;
+        public ICategoryRepository Category { get; private set; }
+        public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
+            Category = new CategoryRepository(_db);
         }
-
-        public void Update(Category category)
+        public void Save()
         {
-            _db.Categories.Update(category);
+            _db.SaveChanges();
         }
     }
 }
