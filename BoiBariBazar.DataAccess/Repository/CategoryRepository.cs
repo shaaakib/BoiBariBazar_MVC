@@ -17,9 +17,9 @@ namespace BoiBariBazar.DataAccess.Repository
             _db = db;
         }
 
-        public void Update(Category category)
+        public void Update(Category obj)
         {
-            _db.Categories.Update(category);
+            _db.Categories.Update(obj);
         }
     }
 }
