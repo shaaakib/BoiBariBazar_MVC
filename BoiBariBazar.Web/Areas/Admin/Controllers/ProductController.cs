@@ -66,6 +66,20 @@ namespace BoiBariBazar.Web.Areas.Admin.Controllers
             return View(obj);
         }
 
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var obj = _unitOfWork.Product.Get(u => u.Id == id);
 
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            _unitOfWork.Product.Remove(obj);
+            _unitOfWork.Save();
+            TempData["success"] = "Category deleted successfully!";
+
+            return RedirectToAction("Index");
+        }
     }
 }
