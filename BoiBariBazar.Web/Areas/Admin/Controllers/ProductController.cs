@@ -1,6 +1,7 @@
 ﻿using BoiBariBazar.DataAccess.Repository.IRepository;
 using BoiBariBazar.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BoiBariBazar.Web.Areas.Admin.Controllers
 {
@@ -16,7 +17,16 @@ namespace BoiBariBazar.Web.Areas.Admin.Controllers
         public IActionResult Index()
         {
             List<Product> productList = _unitOfWork.Product.GetAll().ToList();
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem()
+            {
+                Text = u.Name,
+                Value = u.Id.ToString()
+            });
+
             return View(productList);
+
+
+
         }
 
         public IActionResult Create()
