@@ -21,4 +21,8 @@
     <ProjectReference Include="..\BoiBariBazar.Models\BoiBariBazar.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\product\" />
+  </ItemGroup>
+
 </Project>
