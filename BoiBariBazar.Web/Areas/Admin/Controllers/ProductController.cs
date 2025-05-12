@@ -19,7 +19,7 @@ namespace BoiBariBazar.Web.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            List<Product> productList = _unitOfWork.Product.GetAll().ToList();
+            List<Product> productList = _unitOfWork.Product.GetAll(includeProperties:"Category").ToList();
 
             return View(productList);
         }
