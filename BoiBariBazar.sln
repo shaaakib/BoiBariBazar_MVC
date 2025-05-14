@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoiBariBazarWeb", "BoiBariBazar.Web\BoiBariBazarWeb.csproj", "{8FC0D6B1-6A1A-4C62-A829-72745B477C43}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoiBariBazar.DataAccess", "BoiBariBazar.DataAccess\BoiBariBazar.DataAccess.csproj", "{63C6A9AE-3B0D-4196-8B00-E14F7B2EB0A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoiBariBazar.Models", "BoiBariBazar.Models\BoiBariBazar.Models.csproj", "{5F19468B-249E-4C95-8BDF-ACEA99B7CDEB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoiBariBazar.Utility", "BoiBariBazar.Utility\BoiBariBazar.Utility.csproj", "{1EE1ACB1-038A-4201-B06A-A971A86AC749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoiBariBazarWeb", "BoiBariBazarWeb\BoiBariBazarWeb.csproj", "{36AE000A-77E4-472F-924B-4C13389EB590}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8FC0D6B1-6A1A-4C62-A829-72745B477C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FC0D6B1-6A1A-4C62-A829-72745B477C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FC0D6B1-6A1A-4C62-A829-72745B477C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FC0D6B1-6A1A-4C62-A829-72745B477C43}.Release|Any CPU.Build.0 = Release|Any CPU
 		{63C6A9AE-3B0D-4196-8B00-E14F7B2EB0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{63C6A9AE-3B0D-4196-8B00-E14F7B2EB0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63C6A9AE-3B0D-4196-8B00-E14F7B2EB0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{1EE1ACB1-038A-4201-B06A-A971A86AC749}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EE1ACB1-038A-4201-B06A-A971A86AC749}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EE1ACB1-038A-4201-B06A-A971A86AC749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AE000A-77E4-472F-924B-4C13389EB590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AE000A-77E4-472F-924B-4C13389EB590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AE000A-77E4-472F-924B-4C13389EB590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AE000A-77E4-472F-924B-4C13389EB590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
