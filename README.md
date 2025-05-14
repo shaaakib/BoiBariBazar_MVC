@@ -59,4 +59,4 @@ BoiBariBazar is a complete eCommerce web application built with **ASP.NET Core M
 1. **Clone the repository:**
 
    ```bash
-   [git clone https://github.com/your-username/BoiBariBazar.git](https://github.com/shaaakib/BoiBariBazar_MVC.git)
+   git clone https://github.com/shaaakib/BoiBariBazar_MVC.git
