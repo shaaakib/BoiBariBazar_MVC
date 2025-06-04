@@ -1,12 +1,15 @@
 ﻿using BoiBariBazar.DataAccess.Repository.IRepository;
 using BoiBariBazar.Models;
 using BoiBariBazar.Models.ViewModels;
+using BoiBariBazar.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BoiBariBazar.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
